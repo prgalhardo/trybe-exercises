@@ -96,3 +96,56 @@ switch (chessPiece.toLowerCase()) {
        // console.log("Peça inválida");
         break;
 }; 
+
+// Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras:
+// Porcentagem >= 90 -> A
+// Porcentagem >= 80 -> B
+// Porcentagem >= 70 -> C
+// Porcentagem >= 60 -> D
+// Porcentagem >= 50 -> E
+// Porcentagem < 50 -> F
+// O programa deve retornar uma mensagem de erro e encerrar se a nota passada for menor que 0 ou maior que 100.
+
+let note = "86";
+
+    if (note < 0 || note > 100) {
+    // console.log("Nota incorreta!")
+}   else if (note >=90) {
+    //  console.log("A");
+}   else if (note >= 80) {
+    //  console.log("B");
+}   else if (note >= 70) {
+    //  console.log("C");
+}   else if (note >= 60) {
+    //  console.log("D");
+}   else if (note >= 50) {
+    //  console.log("E");
+}   else {
+    //  console.log("F");
+};
+
+// Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna false .
+// Bonus: use somente um if.
+
+const f = 5;
+const g = 10;
+const h = 20;
+
+if (f % 2 || g % 2 || h % 2 === 0) {
+    // console.log(true);
+} else {
+    // console.log(false);
+};
+
+// Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele retorna false .
+// Bonus: use somente um if.
+
+const i = 45;
+const j = 2;
+const k = 60;
+
+if (i % 2 || j % 2 || k % 2 !== 0) {
+   // console.log(true);
+} else {
+   // console.log(false);
+};
