@@ -55,3 +55,14 @@ console.log(info.personagem + " e " + info2.personagem);
 console.log(info.origem + " e " + info2.origem);
 console.log(info.nota + " e " + info2.nota);
 console.log('Ambos recorrentes');
+
+// Parte II - Funções
+
+function decode(arr) {
+    // Ao receber uma STRING como parâmetro deverá trocar todos números por vogais minúsculas.
+    // De acordo com o formato à seguir:
+    // 1 - a
+    // 2 - e
+    // 3 - i
+    // 4 - o
+    // 5 - u
