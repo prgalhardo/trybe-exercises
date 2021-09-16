@@ -50,8 +50,8 @@
           required
         />
         <label for="logradouro">Clique no seu logradouro: 
-          <input type="radio" value="local" name="logradouro" class="logradouro">Casa</input>
-          <input type="radio" value="local" name="logradouro" class="logradouro">Apartamento</input>
+          <input type="radio" value="local" name="logradouro" class="logradouro" required>Casa</input>
+          <input type="radio" value="local" name="logradouro" class="logradouro" required>Apartamento</input>
         <br />
         </label>
         <label for="city">Insira a sua cidade:</label>
@@ -66,6 +66,25 @@
         <br />
         <label for="state">Escolha o seu estado:</label>
         <select name="states" id="state" required></select>
+      </fieldset>
+      <fieldset>
+        <label for="resume"> Faça um resumo do seu currículo!</label>
+        <br>  
+        <textarea name="resume" id="resume" cols="1000" rows="10" placeholder="Digite aqui" required></textarea>
+        <br>
+        <label for="cargo">Qual o seu último cargo?</label>
+        <input
+          type="text"
+          placeholder="Digite aqui"
+          name="cargo"
+          cols="40"
+          id="cargo"
+          required
+        />
+        <br><br>
+        <label for="cargo">Descreva seu último cargo:</label>
+        <br>
+        <textarea name="descricao" cols="500" id="cargo" rows="3" placeholder="Digite aqui" required></textarea>
       </fieldset>
     </form>
     <script src="script.js"></script>
