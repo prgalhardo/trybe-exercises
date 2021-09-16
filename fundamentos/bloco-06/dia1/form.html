@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <header><h1>Cadastre o seu currículo conosco!</h1></header>
+  <body>
+    <form action="" method="GET">
+      <fieldset id="inicio">
+        <label for="full-name"> Insira o seu nome completo:</label>
+        <input
+          type="text"
+          placeholder="Digite aqui"
+          name="full-name"
+          cols="40"
+          id="full-name"
+          required
+        />
+        <br />
+        <label for="e-mail"> Insira o seu e-mail:</label>
+        <input
+          type="text"
+          placeholder="Digite aqui"
+          name="e-mail"
+          cols="50"
+          id="e-mail"
+          required
+        />
+        <br />
+        <label for="cpf">Insira o seu CPF:</label>
+        <input
+          type="text"
+          placeholder="Digite aqui"
+          name="cpf"
+          cols="11"
+          id="cpf"
+          required
+        />
+        <br />
+        <label for="address">Insira o seu endereço:</label>
+        <input
+          type="text"
+          placeholder="Digite aqui"
+          name="address"
+          cols="200"
+          id="address"
+          required
+        />
+        <label for="logradouro">Clique no seu logradouro: 
+          <input type="radio" value="local" name="logradouro" class="logradouro">Casa</input>
+          <input type="radio" value="local" name="logradouro" class="logradouro">Apartamento</input>
+        <br />
+        </label>
+        <label for="city">Insira a sua cidade:</label>
+        <input
+          type="text"
+          placeholder="Digite aqui"
+          name="city"
+          cols="200"
+          id="city"
+          required
+        />
+        <br />
+        <label for="state">Escolha o seu estado:</label>
+        <select name="states" id="state" required></select>
+      </fieldset>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
