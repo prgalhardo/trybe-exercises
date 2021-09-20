@@ -15,8 +15,9 @@
           type="text"
           placeholder="Digite aqui"
           name="full-name"
-          cols="40"
+          maxlength="40"
           id="full-name"
+          class="validate-input"
           required
         />
         <br />
@@ -25,8 +26,9 @@
           type="text"
           placeholder="Digite aqui"
           name="e-mail"
-          cols="50"
+          maxlength="50"
           id="e-mail"
+          class="validate-input"
           required
         />
         <br />
@@ -35,8 +37,9 @@
           type="text"
           placeholder="Digite aqui"
           name="cpf"
-          cols="11"
+          maxlength="11"
           id="cpf"
+          class="validate-input"
           required
         />
         <br />
@@ -45,13 +48,14 @@
           type="text"
           placeholder="Digite aqui"
           name="address"
-          cols="200"
+          maxlength="200"
           id="address"
+          class="validate-input"
           required
         />
         <label for="logradouro">Clique no seu logradouro: 
-          <input type="radio" value="local" name="logradouro" class="logradouro" required>Casa</input>
-          <input type="radio" value="local" name="logradouro" class="logradouro" required>Apartamento</input>
+          <input type="radio" value="local" name="logradouro" class="logradouro validate-input" required checked>Casa</input>
+          <input type="radio" value="local" name="logradouro" class="logradouro validate-input" required>Apartamento</input>
         <br />
         </label>
         <label for="city">Insira a sua cidade:</label>
@@ -59,8 +63,9 @@
           type="text"
           placeholder="Digite aqui"
           name="city"
-          cols="200"
+          maxlength="200"
           id="city"
+          class="validate-input"
           required
         />
         <br />
@@ -70,23 +75,36 @@
       <fieldset>
         <label for="resume"> Faça um resumo do seu currículo!</label>
         <br>  
-        <textarea name="resume" id="resume" cols="1000" rows="10" placeholder="Digite aqui" required></textarea>
+        <textarea name="resume" id="resume" class="validate-input" maxlength="1000" rows="10" placeholder="Digite aqui" required></textarea>
         <br>
         <label for="cargo">Qual o seu último cargo?</label>
         <input
           type="text"
           placeholder="Digite aqui"
           name="cargo"
-          cols="40"
+          maxlength="40"
           id="cargo"
+          class="validate-input"
           required
         />
         <br><br>
         <label for="cargo">Descreva seu último cargo:</label>
         <br>
-        <textarea name="descricao" cols="500" id="cargo" rows="3" placeholder="Digite aqui" required></textarea>
+        <textarea name="descricao" maxlength="500" id="cargo" class="validate-input" rows="3" placeholder="Digite aqui" required></textarea>
+        <br>
+        <label for="date" class="data">Data:</label>
+        <input
+          type="text"
+          name="date"
+          maxlength="10"
+          id="date"
+          placeholder="Digite aqui"
+          required
+        />
       </fieldset>
+      <button id="submit">Submit</button>
     </form>
+    
     <script src="script.js"></script>
   </body>
 </html>
