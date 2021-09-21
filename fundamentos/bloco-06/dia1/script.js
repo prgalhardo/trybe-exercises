@@ -1,5 +1,3 @@
-/* Utilize estruturas de repetição via JavaScript para gerar os <option>.*/
-/*Fazer um array que contenha todos os estados do Brasil.*/
 const allStates = [
   "Acre",
   "Alagoas",
@@ -29,7 +27,10 @@ const allStates = [
   "Tocantins",
 ];
 let selectState = document.querySelector("#state");
+let validateArray = document.querySelectorAll(".validate-input");
+let forms = document.querySelector(".forms");
 
+/* Utilize estruturas de repetição via JavaScript para gerar os <option>.*/
 function selectStates() {
   for (let i = 0; i < allStates.length; i += 1) {
     let choseState = document.createElement("option");
@@ -40,13 +41,7 @@ function selectStates() {
 }
 selectStates();
 
-/* Verificar o formato da data dd/mm/aaaa .
-O dia deve ser > 0 e <= 31.
-O mês deve ser > 0 e <= 12.
-O ano não pode ser negativo.
-Caso alguma das condições seja inválida no momento do envio do formulário, exibir via alert uma mensagem de erro contextualizada.
-
-Chamar o input que irá conter a data.*/
+// Chamar o input que irá conter a data.
 
 function createDate() {
   let getDate = document.querySelector("#date").value;
@@ -85,13 +80,8 @@ function createDate() {
   return false;
 }
 
-/*Implemente, agora, no Javascript , as validações que foram pedidas ao longo da montagem do formulário.
-Caso todos os dados sejam válidos, monte uma <div> com o consolidado dos dados que foram inseridos no formulário.
-Caso haja algum dado inválido, mostre em uma <div> uma mensagem de erro. Se o erro for na Data de Início , a mensagem deve ser contextualizada.*/
 function validateItems() {
-  // Fazer uma variável que vai salvar todas as classes dos inputs do formulário.
-  let validateArray = document.querySelectorAll(".validate-input");
-  // Percorrer todos esses inputs e caso não esteja dentro dos requisitos exibir uma mensagem de erro.
+  // Percorrer todos inputs e caso não esteja dentro dos requisitos exibir uma mensagem de erro.
   for (let i = 0; i < validateArray.length; i += 1) {
     console.log(validateArray[i].type === "radio");
     if (validateArray[i].value.length === 0) {
@@ -104,14 +94,20 @@ function validateItems() {
   }
 }
 
-/* Logo abaixo do formulário, crie um botão que:
-Chame uma função JavaScript e interrompa o fluxo automático do form utilizando o preventDefault() . Note que isso vai impedir as validações do HTML ao fazer o submit.*/
-
 /* Chame o botão submit.*/
 let button = document.getElementById("submit");
-
+// Adicione o evento click nele e interrompa o fluxo do formulário chamando as funções de validações.
 button.addEventListener("click", (event) => {
   event.preventDefault();
   createDate();
   validateItems();
+});
+
+// Chamar o botão que apaga tudo.
+let eraseButton = document.querySelector(".clear-inputs");
+// Adicionar o evento de click nele e fazer uma estrutura de repetição que passe por todos os inputs.
+eraseButton.addEventListener("click", function () {
+  for (let i = 0; i <= validateArray; i += 1) {
+    forms.removeChild(validateArray[i]);
+  }
 });

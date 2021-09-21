@@ -8,7 +8,7 @@
   </head>
   <header><h1>Cadastre o seu currículo conosco!</h1></header>
   <body>
-    <form action="" method="GET">
+    <form action="" method="GET" class="forms">
       <fieldset id="inicio">
         <label for="full-name"> Insira o seu nome completo:</label>
         <input
@@ -92,17 +92,19 @@
         <br>
         <textarea name="descricao" maxlength="500" id="cargo" class="validate-input" rows="3" placeholder="Digite aqui" required></textarea>
         <br>
-        <label for="date" class="data">Data:</label>
+        <label for="date">Data:</label>
         <input
           type="text"
           name="date"
           maxlength="10"
           id="date"
+          class="validate-input"
           placeholder="Digite aqui"
           required
         />
       </fieldset>
       <button id="submit">Submit</button>
+      <button id="clear-inputs">Limpar dados</button>
     </form>
     
     <script src="script.js"></script>
