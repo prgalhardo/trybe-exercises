@@ -1,23 +1,22 @@
 body {
-font-size: 18px;
-margin-left: 20px;
+  font-size: 25px;
+  margin-left: 20px;
 }
 
 h1 {
-font-size: 25x;
+  font-size: 25x;
 }
 
 h2 {
-font-size: 20px;
+  font-size: 20px;
 }
 
 img {
-    max-width: 100%;
-
+  max-width: 100%;
 }
 
 figure {
-    margin: 30px 0px;
+  margin: 30px 0px;
 }
 @media screen and (max-width: 600px) {
   body {
@@ -32,7 +31,16 @@ figure {
     float: left;
     width: 40%;
     margin-left: 10px;
-  
   }
 }
 @media screen and (min-width: 950px) {
+  body {
+    background-color: linen;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    max-width: 100%
+  }
+}
