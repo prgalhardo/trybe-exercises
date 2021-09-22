@@ -74,6 +74,7 @@ function createDate() {
   }
 
   date.join("/");
+
   if (validateDay() && validateMonth() && validateYear()) {
     return true;
   }
