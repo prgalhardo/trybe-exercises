@@ -1,0 +1,13 @@
+p, h1 {
+    text-align: center;
+}
+li:hover {
+    background-color: #f5f5f5;
+    
+}
+li:active {
+    color:aquamarine;
+}
+ol, ul {
+    list-style: none;
+}
