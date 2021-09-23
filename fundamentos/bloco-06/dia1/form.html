@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <header><h1>Cadastre o seu currículo conosco!</h1></header>
+  <body>
+    <form action="" method="GET" class="forms">
+      <fieldset id="inicio">
+        <label for="full-name"> Insira o seu nome completo:</label>
+        <input
+          type="text"
+          placeholder="Digite aqui"
+          name="full-name"
+          maxlength="40"
+          id="full-name"
+          class="validate-input"
+          required
+        />
+        <br />
+        <label for="e-mail"> Insira o seu e-mail:</label>
+        <input
+          type="text"
+          placeholder="Digite aqui"
+          name="e-mail"
+          maxlength="50"
+          id="e-mail"
+          class="validate-input"
+          required
+        />
+        <br />
+        <label for="cpf">Insira o seu CPF:</label>
+        <input
+          type="text"
+          placeholder="Digite aqui"
+          name="cpf"
+          maxlength="11"
+          id="cpf"
+          class="validate-input"
+          required
+        />
+        <br />
+        <label for="address">Insira o seu endereço:</label>
+        <input
+          type="text"
+          placeholder="Digite aqui"
+          name="address"
+          maxlength="200"
+          id="address"
+          class="validate-input"
+          required
+        />
+        <label for="logradouro">Clique no seu logradouro: 
+          <input type="radio" value="local" name="logradouro" class="logradouro validate-input" required checked>Casa</input>
+          <input type="radio" value="local" name="logradouro" class="logradouro validate-input" required>Apartamento</input>
+        <br />
+        </label>
+        <label for="city">Insira a sua cidade:</label>
+        <input
+          type="text"
+          placeholder="Digite aqui"
+          name="city"
+          maxlength="200"
+          id="city"
+          class="validate-input"
+          required
+        />
+        <br />
+        <label for="state">Escolha o seu estado:</label>
+        <select name="states" id="state" required></select>
+      </fieldset>
+      <fieldset>
+        <label for="resume"> Faça um resumo do seu currículo!</label>
+        <br>  
+        <textarea name="resume" id="resume" class="validate-input" maxlength="1000" rows="10" placeholder="Digite aqui" required></textarea>
+        <br>
+        <label for="cargo">Qual o seu último cargo?</label>
+        <input
+          type="text"
+          placeholder="Digite aqui"
+          name="cargo"
+          maxlength="40"
+          id="cargo"
+          class="validate-input"
+          required
+        />
+        <br><br>
+        <label for="cargo">Descreva seu último cargo:</label>
+        <br>
+        <textarea name="descricao" maxlength="500" id="cargo" class="validate-input" rows="3" placeholder="Digite aqui" required></textarea>
+        <br>
+        <label for="date">Data:</label>
+        <input
+          type="text"
+          name="date"
+          maxlength="10"
+          id="date"
+          class="validate-input"
+          placeholder="Digite aqui"
+          required
+        />
+      </fieldset>
+      <button id="submit">Submit</button>
+      <button id="clear-inputs">Limpar dados</button>
+    </form>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
