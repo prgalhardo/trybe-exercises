@@ -1,0 +1,11 @@
+header {
+    color: brown;
+}
+.links {
+    margin: 20px;
+    padding-left: 10%;
+}
+aside {
+    margin-left: 60%;
+    text-align: center;
+}
