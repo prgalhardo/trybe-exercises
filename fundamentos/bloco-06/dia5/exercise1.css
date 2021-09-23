@@ -1,0 +1,149 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    border: 2px solid black;
+  }
+
+  .tittle {
+    font-size: 40px;
+    text-align: center;
+  }
+  nav {
+    font-size: 20px;
+    font-style: italic;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .chapters {
+    font-weight: bold;
+  }
+
+  .lists {
+    border: 2px solid black;
+  }
+}
+
+.aside-two {
+  border: 2px solid black;
+}
+
+.main-content {
+  margin-bottom: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+footer {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  header {
+    border: 2px solid black;
+  }
+
+  .tittle {
+    font-size: 40px;
+    text-align: center;
+  }
+  nav {
+    font-size: 20px;
+    font-style: italic;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .chapters {
+    font-weight: bold;
+  }
+
+  .lists {
+    border: 2px solid black;
+  }
+}
+
+.aside-two {
+  border: 2px solid black;
+}
+
+.main-content {
+  margin-bottom: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+footer {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 1000px) {
+  header {
+    border: 2px solid black;
+  }
+
+  .tittle {
+    font-size: 40px;
+    text-align: center;
+  }
+  nav {
+    font-size: 20px;
+    font-style: italic;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .chapters {
+    font-weight: bold;
+  }
+
+  .lists {
+    border: 2px solid black;
+  }
+}
+
+.aside-two {
+  border: 2px solid black;
+}
+
+.main-content {
+  margin-bottom: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+footer {
+  margin-left: 10px;
+  margin-right: 10px;
+}
