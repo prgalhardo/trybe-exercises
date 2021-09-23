@@ -1,0 +1,43 @@
+.ordenada {
+    background-color: yellow;
+}
+.par {
+    color: green;
+}
+.impar {
+    text-transform: uppercase;
+}
+.header {
+    color: red;
+}
+.header em {
+    font-size: 40px;
+    border: 1px solid black;
+}
+li {
+    font-size: 20px;
+}
+li em {
+    font-weight: bold;
+}
+.linguagens {
+    color: blue;
+}
+span {
+    background-color: pink;
+}
+li a:hover {
+    font-weight: bold;
+}
+.orange {
+    color: orange
+}
+.green {
+    color: green
+}
+.black {
+    color: black;
+}
+.yellow {
+    color: yellow;
+}
