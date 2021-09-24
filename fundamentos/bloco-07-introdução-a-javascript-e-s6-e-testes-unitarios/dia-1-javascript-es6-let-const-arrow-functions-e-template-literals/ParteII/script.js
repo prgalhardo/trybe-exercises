@@ -13,3 +13,20 @@ console.log(factorialNumber(5));
 
 const factorial = (number) => (number > 1 ? number * factorial(number - 1) : 1);
 console.log(factorial(5));
+
+// 2. Crie uma função que receba uma frase e retorne qual a maior palavra.
+
+const longestWord = (phrase) => {
+  const arrayPhrase = phrase.split(" "); // Dividir a frase em um array com as palavras dela.
+  arrayPhrase.sort((a, b) => a.length - b.length); // Colocar o array de palavras em ordem crescente, chamando uma nova função anônima com os parâmetros a e b.
+  phrase = arrayPhrase[arrayPhrase.length - 1]; // Atribui a última palavra, que contém mais caracteres, ao parâmetro phrase.
+  return phrase;
+};
+console.log(
+  longestWord("Antônio foi no banheiro e não sabemos o que aconteceu")
+);
+
+// 3. Crie uma página que contenha:
+// Um botão ao qual será associado um event listener ;
+// Uma variável clickCount no arquivo JavaScript que acumule o número de clicks no botão;
+// Um campo no HTML que vá atualizando a quantidade de clicks no botão conforme a variável clickCount é atualizada.
