@@ -8,3 +8,8 @@ const factorialNumber = (num) =>
       : `Não existe fatorial de ${num} negativo.` // Se o número (num) for menor que 0 irá retornar essa mensagem.
     : num * factorialNumber(num - 1); // Se o número (num) for maior que 0 retornará o fatorial.
 console.log(factorialNumber(5));
+
+// Faça de modo recursivo.
+
+const factorial = (number) => (number > 1 ? number * factorial(number - 1) : 1);
+console.log(factorial(5));
