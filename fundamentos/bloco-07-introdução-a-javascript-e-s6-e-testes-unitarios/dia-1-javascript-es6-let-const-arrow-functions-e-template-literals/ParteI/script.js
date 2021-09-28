@@ -28,3 +28,4 @@ console.log(
     ordemCrescente
   )} se encontram ordenados em forma crescente.`
 );
+
