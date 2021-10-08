@@ -66,6 +66,11 @@ const books = [
 const expectedResult = 43;
 
 function averageAge() {
-  const ageAuthors = (initialValue, currentValue) => initialValue, currentValue.releaseYear;
-  
-}
+  // Será necessário salvar o comprimento desse objeto.
+ const booksLength = books.length;
+ // Após será necessário fazer o cálculo do releaseYear - birthYear e somar as idades.
+ const sumOfAges = books.reduce((accSum, book) =>  accSum + (book.releaseYear - book.author.birthYear), 0);
+ // Depois é necessário fazer a média, dividir o sumOfAges por booksLength.
+ return sumOfAges/booksLength;
+};
+console.log(averageAge());
